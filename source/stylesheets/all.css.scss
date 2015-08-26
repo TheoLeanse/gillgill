@@ -1,0 +1,47 @@
+@import 'mixins';
+@import 'variables';
+@import 'fonts';
+
+body {
+  font-family: Perpetua;
+  color: $txt-colour;
+  background: url("../images/basic_page_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 60%;
+  text-align: justify;
+}
+
+.header {
+  font-size: 4em;
+  text-align: center;
+  &__hr {
+    border-color: $txt-colour;
+  }
+}
+.section {
+  padding: 0px;
+  &__video {
+    font-size: 5em;
+  }
+  &__pitch {
+    font-size: 1.13em;
+    &--leader {
+      font-size: 1.75em;
+    }
+  }
+  &__social {
+  padding: 0px;
+  font-size: 15px;
+    &--hr {
+      border-color: $txt-colour;
+    }
+    &--logo {
+      height: 30px;
+    }
+    &--p {
+      color: $txt-colour;
+    }
+  }
+}
