@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'variables';
 @import 'fonts';
+@import 'bootstrap';
 
 body {
   font-family: Perpetua;
@@ -8,40 +9,83 @@ body {
   background: url("../images/basic_page_background.jpg") no-repeat center center fixed;
   background-size: cover;
   background-color: transparent;
-  margin: 0 auto;
-  width: 60%;
   text-align: justify;
 }
 
-.header {
-  font-size: 4em;
-  text-align: center;
-  &__hr {
-    border-color: $txt-colour;
-  }
-}
-.section {
-  padding: 0px;
-  &__video {
+.content {
+  &__trailer {
     font-size: 5em;
   }
-  &__pitch {
+  &__info {
     font-size: 1.13em;
-    &--leader {
+    margin-bottom: 50px;
+    &__leader {
       font-size: 1.75em;
     }
   }
   &__social {
-  padding: 0px;
   font-size: 15px;
-    &--hr {
+    &__contact {
       border-color: $txt-colour;
-    }
-    &--logo {
       height: 30px;
-    }
-    &--p {
       color: $txt-colour;
+      padding-right: 10%;
+      margin-bottom: 50px;
+        &__title {
+          border-bottom: 1px solid $txt-colour;
+          font-size: 2em;
+          font-weight: lighter;
+        }
+        & a {
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: $txt-colour;
+          }
+        }
+    }
+    &__logo {
+      height: 35px;
+    }
+    &__signup {
+      padding-left: 10%;
+        &__slug {
+          font-size: 1em;
+          font-weight: lighter;
+        }
+        &__email {
+          background-color: transparent;
+          border-color: $txt-colour;
+          color: $txt-colour;
+          margin-bottom: 17.5px;
+        }
+        & .button {
+          color: $txt-colour;
+          background-color: transparent;
+          border-color: $txt-colour;
+        }
+    }
+  }
+}
+
+.col-lg-6 {
+  padding: 0;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  text-align: center;
+  border-bottom: 2px solid $txt-colour;
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    &__social {
+      &__signup {
+        padding-left: 0;
+      }
     }
   }
 }
