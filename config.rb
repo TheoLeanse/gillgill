@@ -12,11 +12,11 @@
 
 require "bootstrap-sass"
 
-set :css_dir, 'stylesheets'
+set :css_dir, './stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, './javascripts'
 
-set :images_dir, 'images'
+set :images_dir, './images'
 
 # Build-specific configuration
 configure :build do
