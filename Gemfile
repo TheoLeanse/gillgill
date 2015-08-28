@@ -15,6 +15,8 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem "bootstrap-sass", require: false
 
+gem "rack-contrib"
+
 group :development, :test do
   gem "sass"
 end
