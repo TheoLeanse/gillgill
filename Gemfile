@@ -17,6 +17,8 @@ gem "bootstrap-sass", require: false
 
 gem "rack-contrib"
 
+gem 'middleman-deploy', '~> 1.0'
+
 group :development, :test do
   gem "sass"
 end
