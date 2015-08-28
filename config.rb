@@ -1,40 +1,3 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
 # Reload the browser automatically whenever files change
 # configure :development do
 #   activate :livereload
@@ -46,6 +9,7 @@
 #     "Helping"
 #   end
 # end
+
 require "bootstrap-sass"
 set :css_dir, 'stylesheets'
 
@@ -69,4 +33,26 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.deploy_method   = :ftp
+    deploy.host            = 'ftp.example.com'
+    deploy.path            = '/srv/www/site'
+    deploy.user            = 'tvaughan'
+    deploy.password        = 'secret'
+  end
+else
+  activate :deploy do |deploy|
+    deploy.deploy_method  = :git
+    deploy.remote         = 'gillgill'
+    deploy.commit_message = 'deploying test site'
+    # Optional Settings
+    # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+    # deploy.branch   = 'custom-branch' # default: gh-pages
+    # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+    # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+  end
 end
