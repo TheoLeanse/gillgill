@@ -30,7 +30,8 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
@@ -48,7 +49,7 @@ when 'production'
 else
   activate :deploy do |deploy|
     deploy.method         = :git
-    deploy.remote         = 'gillgill'
+    deploy.remote         = 'https://github.com/TheoLeanse/gillgill.git'
     deploy.branch         = 'gh-pages'
     deploy.commit_message = 'deploying test site'
     # Optional Settings
