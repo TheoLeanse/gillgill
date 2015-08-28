@@ -11,6 +11,7 @@
 # end
 
 require "bootstrap-sass"
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -46,8 +47,9 @@ when 'production'
   end
 else
   activate :deploy do |deploy|
-    deploy.deploy_method  = :git
+    deploy.method         = :git
     deploy.remote         = 'gillgill'
+    deploy.branch         = 'gh-pages'
     deploy.commit_message = 'deploying test site'
     # Optional Settings
     # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
