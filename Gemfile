@@ -21,4 +21,5 @@ gem 'middleman-deploy', '~> 1.0'
 
 group :development, :test do
   gem "sass"
+  gem "pry"
 end
