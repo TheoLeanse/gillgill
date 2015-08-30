@@ -37,9 +37,13 @@ body {
           font-weight: lighter;
         }
         & a {
+          &:visited {
+            color: lighten( $txt-colour, 15% );
+          }
+          &:hover {
+            color: darken( $txt-colour, 15% );
+          }
           &:link,
-          &:visited,
-          &:hover,
           &:active {
             color: $txt-colour;
           }
