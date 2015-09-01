@@ -10,7 +10,6 @@
 #   end
 # end
 
-require "bootstrap-sass"
 
 set :css_dir, './stylesheets'
 
@@ -41,10 +40,10 @@ case ENV['TARGET'].to_s.downcase
 when 'production'
   activate :deploy do |deploy|
     deploy.deploy_method   = :ftp
-    deploy.host            = 'ftp.example.com'
-    deploy.path            = '/srv/www/site'
-    deploy.user            = 'tvaughan'
-    deploy.password        = 'secret'
+    deploy.host            = 'gandalf.dreamhost.com'
+    deploy.path            = 'gillgillfilm.com'
+    deploy.user            = 'louhor4'
+    deploy.password        = ENV['LOUISSECRET']
   end
 else
   activate :deploy do |deploy|

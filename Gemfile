@@ -13,7 +13,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
-gem "bootstrap-sass"#, require: false
+# gem "bootstrap-sass"#, require: false
 
 gem "rack-contrib"
 
