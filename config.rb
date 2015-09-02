@@ -39,9 +39,9 @@ end
 case ENV['TARGET'].to_s.downcase
 when 'production'
   activate :deploy do |deploy|
-    deploy.deploy_method   = :ftp
+    deploy.method          = :ftp
     deploy.host            = 'gandalf.dreamhost.com'
-    deploy.path            = 'gillgillfilm.com'
+    deploy.path            = 'gillandgillfilm.com'
     deploy.user            = 'louhor4'
     deploy.password        = ENV['LOUISSECRET']
   end
