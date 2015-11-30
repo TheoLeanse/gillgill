@@ -1305,67 +1305,65 @@ body {
   margin-bottom: 50px; }
   /* line 22, all.css.scss */
   .content__info__leader {
-    font-size: 22px;
-    line-height: 1.3; }
-  /* line 26, all.css.scss */
+    font-size: 1.85em; }
+  /* line 25, all.css.scss */
   .content__info__normal {
-    font-size: 20px;
-    line-height: 1.2; }
-/* line 31, all.css.scss */
+    font-size: 1.4em; }
+/* line 29, all.css.scss */
 .content__social {
   font-size: 15px; }
-  /* line 33, all.css.scss */
+  /* line 31, all.css.scss */
   .content__social__contact {
     border-color: #FFF3DC;
     color: #FFF3DC;
     padding-right: 10%;
     margin-bottom: 50px; }
-    /* line 38, all.css.scss */
+    /* line 36, all.css.scss */
     .content__social__contact__title {
       border-bottom: 1px solid #FFF3DC;
       font-size: 2em;
       font-weight: lighter;
       margin: 0; }
-    /* line 45, all.css.scss */
+    /* line 43, all.css.scss */
     .content__social__contact a:visited {
       color: white; }
-    /* line 48, all.css.scss */
+    /* line 46, all.css.scss */
     .content__social__contact a:hover {
       color: #ffd990; }
-    /* line 51, all.css.scss */
+    /* line 49, all.css.scss */
     .content__social__contact a:link, .content__social__contact a:active {
       color: #FFF3DC; }
-  /* line 57, all.css.scss */
+  /* line 55, all.css.scss */
   .content__social__logo {
     height: 35px; }
-  /* line 60, all.css.scss */
+  /* line 58, all.css.scss */
   .content__social__signup {
     padding-left: 10%;
     margin-bottom: 30px; }
-    /* line 63, all.css.scss */
+    /* line 61, all.css.scss */
     .content__social__signup__slug {
       font-size: 1em;
       font-weight: lighter;
       margin: 0;
       line-height: 2; }
-    /* line 69, all.css.scss */
+    /* line 67, all.css.scss */
     .content__social__signup__email {
       background-color: transparent;
       border-color: #FFF3DC;
       color: #FFF3DC;
       margin-top: 17.5px;
       margin-bottom: 17.5px; }
-    /* line 76, all.css.scss */
+    /* line 74, all.css.scss */
     .content__social__signup .button {
       color: #FFF3DC;
       background-color: transparent;
       border-color: #FFF3DC; }
 
-/* line 85, all.css.scss */
+/* line 83, all.css.scss */
 .col-lg-6 {
   padding: 0; }
 
-/* line 89, all.css.scss */
+/* line 87, all.css.scss */
 h1 {
   margin: 30px 0;
   font-size: 4em;
@@ -1373,58 +1371,61 @@ h1 {
   font-weight: 100;
   border-bottom: 2px solid #FFF3DC; }
 
-/* line 97, all.css.scss */
+/* line 95, all.css.scss */
 .header {
-  padding: 30px;
-  text-align: center; }
+  padding: 30px; }
 
-/* line 102, all.css.scss */
+/* line 99, all.css.scss */
 .header__logo {
+  margin-bottom: 25px;
   margin-top: 25px;
-  max-width: 450px; }
+  width: 100%; }
 
 @media screen and (max-width: 992px) {
-  /* line 108, all.css.scss */
+  /* line 106, all.css.scss */
   body {
     padding: 0 20px; }
 
-  /* line 112, all.css.scss */
+  /* line 110, all.css.scss */
   .content__trailer {
     height: 350px; }
-  /* line 115, all.css.scss */
+  /* line 113, all.css.scss */
   .content__info {
     border-bottom: 1px solid #FFF3DC; }
-  /* line 119, all.css.scss */
+  /* line 117, all.css.scss */
   .content__social__contact {
     border-bottom: 1px solid #FFF3DC;
     margin-bottom: 0;
     padding-bottom: 50px; }
-    /* line 123, all.css.scss */
+    /* line 121, all.css.scss */
     .content__social__contact__title {
       border-bottom: 0px; }
-  /* line 127, all.css.scss */
+  /* line 125, all.css.scss */
   .content__social__signup {
     margin-top: 50px;
     padding-left: 0; } }
 @media screen and (max-width: 768px) {
-  /* line 138, all.css.scss */
+  /* line 136, all.css.scss */
   .content__social__signup {
     padding-left: 0; } }
 @media screen and (max-width: 420px) {
-  /* line 146, all.css.scss */
+  /* line 144, all.css.scss */
   h1 {
     font-size: 2.25em; }
 
-  /* line 150, all.css.scss */
+  /* line 148, all.css.scss */
   .content__trailer {
     height: 250px; }
-  /* line 162, all.css.scss */
+  /* line 152, all.css.scss */
+  .content__info__normal {
+    font-size: 1.1em; }
+  /* line 155, all.css.scss */
+  .content__info__leader {
+    font-size: 1.3em; }
+  /* line 160, all.css.scss */
   .content__social__contact {
     margin-bottom: 0;
     padding-bottom: 50px; }
-    /* line 165, all.css.scss */
+    /* line 163, all.css.scss */
     .content__social__contact__title {
       font-size: 1.5em; } }
-/* line 174, all.css.scss */
-h1 {
-  margin: 23px 0; }
